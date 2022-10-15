@@ -1,0 +1,73 @@
+/* Universals */
+.dataTables_filter {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.dataTables_filter label {
+  display: inline;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.dt-buttons button {
+  padding: 0.175rem 0.75rem;
+  border-color: gray;
+}
+
+/* CHART OF ACCOUNTS MODULE */
+/* coa page */
+.form-label-vertical-align {
+  padding-top: 0.5em;
+}
+
+table.coasetup-dimensions-table {
+  width: 100%;
+}
+
+.separator {
+  border: 0;
+}
+
+.dataTables_length {
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.dataTables_length select {
+  width: auto;
+}
+
+/* coa setup page */
+.hidden {
+  display: none;
+}
+
+.col-form-label {
+  font-size: 91%;
+}
+
+#toggle-coa-addtl-setup-button {
+  font-size: inherit;
+}
+
+.rajib-blue {
+  color: #2a3f54;
+}
+
+.btn-rajib-blue {
+  border-color: #2a3f54;
+  background-color: #2a3f54;
+}
+
+h3.page-title {
+  height: auto;
+}
+
+/* ADMINISTRATION MODULE */
+.page_path_link {
+  text-decoration: underline;
+}

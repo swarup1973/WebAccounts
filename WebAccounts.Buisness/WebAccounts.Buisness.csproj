@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6296F426-345D-4C71-8115-035782421B8E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAccounts.Buisness</RootNamespace>
+    <AssemblyName>WebAccounts.Buisness</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\Administrator_Dim_Setup.cs" />
+    <Compile Include="Administrator\Administrator_Role.cs" />
+    <Compile Include="Administrator\Administrator_RoleUser_Assignment.cs" />
+    <Compile Include="Administrator\Administrator_User.cs" />
+    <Compile Include="Administrator\Administrator_User_Dimension.cs" />
+    <Compile Include="Administrator\BankPostingGroup.cs" />
+    <Compile Include="Administrator\BranchResposibility.cs" />
+    <Compile Include="Administrator\NoSequence.cs" />
+    <Compile Include="Administrator\Roles.cs" />
+    <Compile Include="Common\common.cs" />
+    <Compile Include="FixedAssets\depreciationbook.cs" />
+    <Compile Include="FixedAssets\FixedAssetDimension.cs" />
+    <Compile Include="FixedAssets\FixedAssetMaster.cs" />
+    <Compile Include="FixedAssets\FixedAssetSetup.cs" />
+    <Compile Include="FixedAssets\loan-fixed-asset.cs" />
+    <Compile Include="FixedAssets\location-transfer.cs" />
+    <Compile Include="GeneralLedger\AssignSettelemetPeriod.cs" />
+    <Compile Include="GeneralLedger\BankAccount.cs" />
+    <Compile Include="GeneralLedger\Chartofacct.cs" />
+    <Compile Include="GeneralLedger\CheckRegister.cs" />
+    <Compile Include="GeneralLedger\Currency.cs" />
+    <Compile Include="GeneralLedger\Dimension.cs" />
+    <Compile Include="GeneralLedger\dimension_setup.cs" />
+    <Compile Include="GeneralLedger\ExchangeRate.cs" />
+    <Compile Include="GeneralLedger\FiscalYear.cs" />
+    <Compile Include="GeneralLedger\GeneralSetup.cs" />
+    <Compile Include="GeneralLedger\JournalBatch.cs" />
+    <Compile Include="GeneralLedger\journalbatchdimension.cs" />
+    <Compile Include="GeneralLedger\LedgerCategory.cs" />
+    <Compile Include="GeneralLedger\Profiles.cs" />
+    <Compile Include="GeneralLedger\salestaxcomponent.cs" />
+    <Compile Include="GeneralLedger\SalesTaxExemptMaster.cs" />
+    <Compile Include="GeneralLedger\SalesTaxGroupItem.cs" />
+    <Compile Include="GeneralLedger\TaxAuthoritySetup.cs" />
+    <Compile Include="GeneralLedger\taxcode.cs" />
+    <Compile Include="GeneralLedger\taxgroup.cs" />
+    <Compile Include="GeneralLedger\TaxJurisdiction.cs" />
+    <Compile Include="GeneralLedger\TaxSettlement.cs" />
+    <Compile Include="GeneralLedger\taxsetup.cs" />
+    <Compile Include="GeneralLedger\taxvalues.cs" />
+    <Compile Include="GeneralLedger\taxvaluesetup.cs" />
+    <Compile Include="InventoryManagement\InventorySetup.cs" />
+    <Compile Include="InventoryManagement\ItemConversion.cs" />
+    <Compile Include="InventoryManagement\ItemVariant.cs" />
+    <Compile Include="InventoryManagement\StandardConversion.cs" />
+    <Compile Include="InventoryManagement\UOM.cs" />
+    <Compile Include="InventoryManagement\VariantValue.cs" />
+    <Compile Include="Payables\invoicediscount.cs" />
+    <Compile Include="Payables\PayableSetup.cs" />
+    <Compile Include="Payables\vendorbankac.cs" />
+    <Compile Include="Payables\vendordimension.cs" />
+    <Compile Include="Payables\vendoritemdiscount.cs" />
+    <Compile Include="Payables\vendoritemprice.cs" />
+    <Compile Include="Payables\vendraccountoverview.cs" />
+    <Compile Include="Procurement\PaymentMethod.cs" />
+    <Compile Include="Procurement\PaymentTerms.cs" />
+    <Compile Include="Procurement\procurementsetup.cs" />
+    <Compile Include="Procurement\VendorShipmentMethod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receivables\creditcardinfo.cs" />
+    <Compile Include="Receivables\customerdimension.cs" />
+    <Compile Include="Receivables\customeritemdescount.cs" />
+    <Compile Include="Receivables\customeritemprice.cs" />
+    <Compile Include="Receivables\customeroverview.cs" />
+    <Compile Include="Receivables\invoicecustomerdiscount.cs" />
+    <Compile Include="Receivables\ReceivableSetup.cs" />
+    <Compile Include="Sales\salessetup.cs" />
+    <Compile Include="User\User.cs" />
+    <Compile Include="WarehouseManagement\WarehouseSetup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebAccounts.Data\WebAccounts.Data.csproj">
+      <Project>{e3ef7013-95f6-4420-8847-a1a137a2b49e}</Project>
+      <Name>WebAccounts.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
