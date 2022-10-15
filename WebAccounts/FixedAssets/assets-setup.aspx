@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master/base.Master" AutoEventWireup="true" CodeBehind="assets-setup.aspx.cs" Inherits="WebAccounts.assets_setup" %>
+﻿<%@ Page Title="Asset Setup" Language="C#" MasterPageFile="~/master/base.Master" AutoEventWireup="true" CodeBehind="assets-setup.aspx.cs" Inherits="WebAccounts.assets_setup" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="contentheader" runat="server">
     <script type="text/javascript" src="../Scripts/jquery-3.5.0.min.js?0"></script>
