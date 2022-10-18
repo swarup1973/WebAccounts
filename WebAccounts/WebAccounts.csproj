@@ -406,6 +406,8 @@
     <Content Include="Payables\vendor-sub-ledger-updates.aspx" />
     <Content Include="Payables\vendor-tax-updates.aspx" />
     <Content Include="Payables\vendor-transaction.aspx" />
+    <Content Include="Payroll\calendar-setup-overview.aspx" />
+    <Content Include="Payroll\create-calendar-overview.aspx" />
     <Content Include="Procurement\customer-payment-method.aspx" />
     <Content Include="Procurement\customer-payment-terms.aspx" />
     <Content Include="Procurement\customer-shipment-method.aspx" />
@@ -4441,6 +4443,20 @@
     </Compile>
     <Compile Include="Payables\vendor-dimension.aspx.designer.cs">
       <DependentUpon>vendor-dimension.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\calendar-setup-overview.aspx.cs">
+      <DependentUpon>calendar-setup-overview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payroll\calendar-setup-overview.aspx.designer.cs">
+      <DependentUpon>calendar-setup-overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\create-calendar-overview.aspx.cs">
+      <DependentUpon>create-calendar-overview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payroll\create-calendar-overview.aspx.designer.cs">
+      <DependentUpon>create-calendar-overview.aspx</DependentUpon>
     </Compile>
     <Compile Include="Procurement\customer-payment-method.aspx.cs">
       <DependentUpon>customer-payment-method.aspx</DependentUpon>
