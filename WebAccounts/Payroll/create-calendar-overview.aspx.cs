@@ -11,7 +11,10 @@ namespace WebAccounts.Payroll
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                txt.Value = Session["userid"].ToString();
+            }
         }
     }
 }

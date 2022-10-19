@@ -408,6 +408,9 @@
     <Content Include="Payables\vendor-transaction.aspx" />
     <Content Include="Payroll\calendar-setup-overview.aspx" />
     <Content Include="Payroll\create-calendar-overview.aspx" />
+    <Content Include="Payroll\js\calendarSetup.js" />
+    <Content Include="Payroll\js\createCalendar.js" />
+    <Content Include="Payroll\working-time-calendar.aspx" />
     <Content Include="Procurement\customer-payment-method.aspx" />
     <Content Include="Procurement\customer-payment-terms.aspx" />
     <Content Include="Procurement\customer-shipment-method.aspx" />
@@ -4457,6 +4460,13 @@
     </Compile>
     <Compile Include="Payroll\create-calendar-overview.aspx.designer.cs">
       <DependentUpon>create-calendar-overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\working-time-calendar.aspx.cs">
+      <DependentUpon>working-time-calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payroll\working-time-calendar.aspx.designer.cs">
+      <DependentUpon>working-time-calendar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Procurement\customer-payment-method.aspx.cs">
       <DependentUpon>customer-payment-method.aspx</DependentUpon>
